@@ -10,7 +10,7 @@ class Keyboard {
     private:
         const char *keymap;
 
-        void assert_key_in_bounds(char key);
+        void assert_key_in_bounds(unsigned char key);
 
     public:
         bool keyboard[CHIP8_TOTAL_KEYS];
@@ -18,9 +18,9 @@ class Keyboard {
         Keyboard(void);
         char map(char key);
         void set_keymap(const char *keymap);
-        void key_down(char key);
-        void key_up(char key);
-        bool is_key_down(char key);
+        void key_down(unsigned char key);
+        void key_up(unsigned char key);
+        bool is_key_down(unsigned char key);
 };
 
 #endif

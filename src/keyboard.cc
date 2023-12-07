@@ -11,7 +11,7 @@ Keyboard::Keyboard(void) {
 }
 
 
-void Keyboard::assert_key_in_bounds(char vkey) {
+void Keyboard::assert_key_in_bounds(unsigned char vkey) {
     assert(vkey >= 0 && vkey < CHIP8_TOTAL_KEYS);
 }
 
@@ -31,19 +31,19 @@ char Keyboard::map(char key) {
 }
 
 
-void Keyboard::key_down(char vkey) {
+void Keyboard::key_down(unsigned char vkey) {
     assert_key_in_bounds(vkey);
     keyboard[vkey] = true;
 }
 
 
-void Keyboard::key_up(char vkey) {
+void Keyboard::key_up(unsigned char vkey) {
     assert_key_in_bounds(vkey);
     keyboard[vkey] = false;
 }
 
 
-bool Keyboard::is_key_down(char vkey) {
+bool Keyboard::is_key_down(unsigned char vkey) {
     assert_key_in_bounds(vkey);
     return keyboard[vkey];
 }
