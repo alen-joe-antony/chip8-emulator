@@ -68,6 +68,12 @@ int main(int argc, char **argv) {
                     char key = event.key.keysym.sym;
                     char vkey = chip8.keyboard.map(key);
                     if(vkey != -1) { chip8.keyboard.key_down(vkey); }
+
+                    // Quit the emulator when 'q' is pressed
+                    if (key == SDLK_q) {
+                        goto EXIT;
+                    }
+
                     break;
                 }
 
