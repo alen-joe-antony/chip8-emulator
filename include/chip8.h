@@ -1,7 +1,7 @@
 #ifndef CHIP8_H_
 #define CHIP8_H_
 
-#include <stddef.h>
+#include <cstddef>
 
 #include "ram.h"
 #include "registers.h"

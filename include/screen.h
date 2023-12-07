@@ -1,7 +1,7 @@
 #ifndef CHIP8_SCREEN_H_
 #define CHIP8_SCREEN_H_
 
-#include <stdbool.h>
+#include <cstdbool>
 
 #include "config.h"
 

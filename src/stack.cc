@@ -1,5 +1,5 @@
-#include <assert.h>
-#include <memory.h>
+#include <cassert>
+#include <cstring>
 
 #include "stack.h"
 #include "config.h"

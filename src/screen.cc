@@ -1,6 +1,6 @@
-#include <assert.h>
-#include <memory.h>
-#include <stdbool.h>
+#include <cassert>
+#include <cstring>
+#include <cstdbool>
 
 #include "screen.h"
 #include "config.h"

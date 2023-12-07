@@ -1,8 +1,8 @@
-#include <assert.h>
-#include <time.h>
-#include <memory.h>
-#include <stddef.h>
-#include <stdlib.h>
+#include <cassert>
+#include <ctime>
+#include <cstring>
+#include <cstddef>
+#include <cstdlib>
 
 #include "SDL2/SDL.h"
 
